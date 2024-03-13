@@ -5,6 +5,7 @@ accelerate
 einops
 kornia
 gradio
+triton
 torchvision
 opencv-python
 xformers==0.0.16
