@@ -1,0 +1,10 @@
+torch
+diffusers
+transformers
+accelerate
+einops
+kornia
+gradio
+torchvision
+opencv-python
+xformers
