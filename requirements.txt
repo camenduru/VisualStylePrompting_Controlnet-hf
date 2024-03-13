@@ -1,4 +1,4 @@
-torch
+torch==1.13.1
 diffusers
 transformers
 accelerate
@@ -7,4 +7,5 @@ kornia
 gradio
 torchvision
 opencv-python
-xformers
+xformers==0.0.16
+
