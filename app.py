@@ -247,7 +247,7 @@ iface_controlnet = gr.Interface(
         gr.components.Textbox(label="Text prompt", placeholder="Enter Text prompt"),
         gr.components.Textbox(label="Number of outputs", placeholder="Enter Number of outputs"),
         gr.components.Slider(minimum=0.5, maximum=10, step=0.5, value=0.5, label="Controlnet scale"),
-        gr.components.Slider(minimum=50, maximum=50, step=10, value=50, label="Diffusion steps")
+        gr.components.Slider(minimum=10, maximum=50, step=10, value=50, label="Diffusion steps")
     ],
     outputs=gr.components.Image(type="pil"),
     title="🎨 Visual Style Prompting (w/ ControlNet)",
