@@ -107,7 +107,7 @@ def load_example_controlnet():
             inf_object_name = config["inference_info"]["inf_object_list"][0]
 
             canny_path = './assets/depth_dir/gundam.png'
-            image_info = [image_path, canny_path, style_name, "", 1, 0.5, 50]
+            image_info = [image_path, canny_path, style_name, "", 1, 0.5, 50] # empty text
 
             examples.append(image_info)
 
