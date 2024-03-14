@@ -1,7 +1,7 @@
 import torch
 from pipelines.inverted_ve_pipeline import STYLE_DESCRIPTION_DICT, create_image_grid
 import gradio as gr
-import os, json
+import os, json, cv2
 import numpy as np
 from PIL import Image
 
@@ -107,7 +107,7 @@ def load_example_controlnet():
             inf_object_name = config["inference_info"]["inf_object_list"][0]
 
             canny_path = './assets/depth_dir/gundam.png'
-            image_info = [image_path, canny_path, style_name, inf_object_name, 1, 0.5, 50]
+            image_info = [image_path, canny_path, style_name, "", 1, 0.5, 50]
 
             examples.append(image_info)
 
