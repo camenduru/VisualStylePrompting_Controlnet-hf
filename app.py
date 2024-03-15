@@ -255,4 +255,10 @@ iface_controlnet = gr.Interface(
     examples=load_example_controlnet(),
 )
 
-iface_controlnet.launch(debug=True)
+from pyngrok import ngrok, conf
+NGROK_TOKEN = os.environ.get('NGROK_TOKEN')
+conf.get_default().auth_token = NGROK_TOKEN
+public_url = ngrok.connect(7861).public_url
+print(public_url)
+
+iface_controlnet.launch(server_port=7861, inline=False, share=False, debug=True)
